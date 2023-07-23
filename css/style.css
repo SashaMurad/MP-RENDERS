@@ -1,0 +1,226 @@
+/** 
+Colores:
+Gris claro: #EEF0F2
+Blanco: whitesmoke
+Gris oscuro: #2E2F2F
+Naranja: #FF9F1C
+gris muy oscuro: rgb(27, 27, 27)
+**/
+
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+/*HEADER*/
+
+.encabezado-container{
+    background-color:#eef0f2b0 ;
+}
+
+.encabezado-container a:hover{
+    color: #FF9F1C;
+}
+
+.logo-header{
+    width: 2em
+}
+
+.encabezado-logo-mprenders{
+    justify-content: left;
+}
+
+.encabezado-lista{
+    justify-content: right;
+    color: #2E2F2F;
+    font-weight: 400;
+}
+
+/*MAIN*/
+
+main{
+    background-color:  #EEF0F2 
+}
+
+.carrusel-media{
+    display: none;
+}
+
+/** page nosotros **/
+
+/*GRID NOSOTROS main*/
+/*
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35em;
+    background-color:#2E2F2F;
+}
+
+.nosotros-foto{
+    grid-column: 1/2;
+}
+
+.texto-nosotro{
+    grid-column: 2/3;
+}
+*/
+
+.subcontainer-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 15em;
+    right: 5em;
+    background-color: #eef0f27a;
+    width: 30em;
+    height: 30em;
+    padding-top: 9em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.img-nosotros{
+    width: 100%;
+}
+
+.titulo-nosotros{
+    font-weight: 800;
+    font-size: 2em;
+    color:  #2E2F2F;
+}
+
+.p-nosotros{
+    font-size: 1.2em;
+    font-weight: 400;
+    color:  #2E2F2F;
+}
+
+/** page servicio **/ 
+h2{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: ;
+}
+
+.subtitulo-servicios{
+    color: #EEF0F2;
+    font-weight: 800;
+    color: #FF9F1C;
+}
+
+.servicios-presupuesto{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF9F1C;
+}
+
+h4{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+h6{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Portfolio*/
+
+section img{
+    width: 400px;
+}
+
+section video{
+    width: 100%;
+}
+
+/*Contacto*/
+
+.iconos-contacto{
+    width: 18px;
+}
+
+ul li nav a p{
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer{
+    background-color:#EEF0F2 ;
+    padding: 0.8em 0.8em 0.8em 0.8em;
+}
+
+.footer-container{
+    background-color:#EEF0F2 ;
+}
+
+.logo-footer{
+    width: 2em;
+}
+
+.footer-lista{
+    justify-content: center;
+    color: #2E2F2F;
+    font-weight: 400;
+}
+
+.logo-flotante{
+    position: fixed;
+    bottom: 0.8em;
+    right: 1em;
+} 
+.footer-media-img{
+    width: 1em;
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+   
+
+}
+
+.footer-lista{
+ align-items: center;
+}
+
+@media (max-width: 990px) {
+    .footer-container{
+        height: 1em;
+    }
+
+    .footer-media-img{
+        width: 0.5em;
+    }
+    
+    .logo-footer{
+        width: 1em;
+    }
+
+    .footer-lista{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carrusel-index{
+        flex-direction: column;
+    }
+
+    .carrusel-lg{
+        display: none;
+    }
+
+    .carrusel-media{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

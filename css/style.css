@@ -45,26 +45,6 @@ main{
     display: none;
 }
 
-/** page nosotros **/
-
-/*GRID NOSOTROS main*/
-/*
-.grid-nosotros{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 35em;
-    background-color:#2E2F2F;
-}
-
-.nosotros-foto{
-    grid-column: 1/2;
-}
-
-.texto-nosotro{
-    grid-column: 2/3;
-}
-*/
-
 .subcontainer-nosotros{
     display: flex;
     flex-direction: column;
@@ -190,6 +170,10 @@ footer{
 }
 
 @media (max-width: 990px) {
+    .logo-header{
+        width: 1em
+    }
+ 
     .footer-container{
         height: 1em;
     }
@@ -220,6 +204,17 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subcontainer-nosotros{
+        position: relative;
+        font-size: 0.5em;
+    }
+
 }
 
 

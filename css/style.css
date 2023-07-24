@@ -52,7 +52,6 @@ main{
     position: absolute;
     top: 15em;
     right: 5em;
-    background-color: #eef0f27a;
     width: 30em;
     height: 30em;
     padding-top: 9em;
@@ -65,15 +64,15 @@ main{
 }
 
 .titulo-nosotros{
+    color:  whitesmoke;
     font-weight: 800;
     font-size: 2em;
-    color:  #2E2F2F;
 }
 
 .p-nosotros{
+    color:  whitesmoke;
     font-size: 1.2em;
     font-weight: 400;
-    color:  #2E2F2F;
 }
 
 /** page servicio **/ 
@@ -211,10 +210,22 @@ footer{
     }
 
     .subcontainer-nosotros{
+        width: 100%;
+        height: 30em;
         position: relative;
+        top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
         font-size: 0.5em;
     }
 
+    .titulo-nosotros{
+        color:#2E2F2F
+    }
+    
+    .p-nosotros{
+        color:#2E2F2F
+    }
 }
 
 

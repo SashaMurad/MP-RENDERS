@@ -83,7 +83,6 @@ h2{
 
 h3{
     font-weight: 600;
-    font-size: ;
 }
 
 .subtitulo-servicios{
@@ -173,14 +172,6 @@ footer{
         width: 1em
     }
  
-    .footer-container{
-        height: 1em;
-    }
-
-    .footer-media-img{
-        width: 0.5em;
-    }
-    
     .logo-footer{
         width: 1em;
     }

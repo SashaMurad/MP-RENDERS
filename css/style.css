@@ -45,66 +45,164 @@ main{
     display: none;
 }
 
-.subcontainer-nosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 15em;
-    right: 5em;
-    width: 30em;
-    height: 30em;
-    padding-top: 9em;
-    padding-left: 2em;
-    padding-right: 2em;
+/*nosotros*/
+
+.grid-nosotros{
+    background-color:  #2E2F2F;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 1fr 1fr;.
 }
 
 .img-nosotros{
-    width: 100%;
+    width: 44em;
+    height: 30em;
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
 .titulo-nosotros{
-    color:  whitesmoke;
+    grid-column: 3/4;
+    grid-row: 1/2;
     font-weight: 800;
-    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color:#EEF0F2
 }
 
 .p-nosotros{
-    color:  whitesmoke;
-    font-size: 1.2em;
-    font-weight: 400;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color:#EEF0F2
+    
 }
 
 /** page servicio **/ 
-h2{
+.servcios-titulo{
     font-weight: 800;
-    font-size: 20px;
-}
-
-h3{
-    font-weight: 600;
-}
-
-.subtitulo-servicios{
+    font-size: 1.8em;
     color: #EEF0F2;
-    font-weight: 800;
-    color: #FF9F1C;
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .servicios-presupuesto{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 600;
+    color: #FF9F1C;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 3em;
+}
+
+.servicios-presupuesto:hover{
+    color: #EEF0F2;
+}
+
+.servicios-items-Render{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-items-recorrido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-items-360{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servcios-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servcios-container{
+    padding-left: 8em;
+    position: absolute;
+    top: 6em;
+}
+
+.servicios-items-subtitulo{
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #FF9F1C;
+    text-decoration: none;
+    margin: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.servicios-items-subtitulo:hover{
+    color: whitesmoke;
+    font-size: 0.8em;
+}
+
+.servicios-items-button{
+    border-radius: 0.8em;
+    background-color: transparent;
+    border-color: #EEF0F2;
+}
+
+.servicios-items-button:hover{
+    background-color: rgba(245, 245, 245, 0.116);
+}
+
+.servicios-items-card{
+    font-size: 0.8em;
+    width: 25em;
+    color: #EEF0F2;
+    margin: 2em;
+    
+}
+
+.servicios{
+    background-color: transparent
+}
+
+.servicio-fondo{
+    height: 40em;
+    width: 85em;
+}
+
+.servicios-beneficios-titulo{
+    padding-left: 2em;
+    padding-top: 2em;
+    font-size: 1.6em;
+    font-weight: 800;
+    color:#EEF0F2;
+}
+
+.servicios-beneficios-lista-subtit{
+    font-weight: 600;
     color: #FF9F1C;
 }
 
-h4{
-    font-weight: 800;
-    font-size: 18px;
+.servicios-beneficios-lista{
+    padding-left: 5em;
+    padding-top: 1em;
+    font-size: 0.9em;
+    color:#EEF0F2;
 }
 
-h6{
-    font-weight: 600;
-    font-size: 16px;
+.servicios-beneficios{
+    height: 25em;
+    background-color: #2E2F2F;
 }
 
 /*Portfolio*/
@@ -195,27 +293,38 @@ footer{
         flex-direction: column;
     }
 
-    .grid-nosotros{
-        display: flex;
-        flex-direction: column;
+    .servicios-items-360{
+        padding-top: 1em;
     }
 
-    .subcontainer-nosotros{
-        width: 100%;
+    .servicios-items-Render{
+        padding-bottom: 1em;
+    }
+
+    .servicios-items-recorrido{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .servcios-container{
+        padding-left: 0em;
+    }
+
+    .servcios-titulo{
+        padding-top: 1em;
+    }
+
+    .servicio-fondo{
+        height: 65em;
+        width: 110em;
+    }
+
+    .servicios-beneficios{
         height: 30em;
-        position: relative;
-        top: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 0.5em;
     }
 
-    .titulo-nosotros{
-        color:#2E2F2F
-    }
-    
-    .p-nosotros{
-        color:#2E2F2F
+    .servicios-beneficios-lista{
+        padding-left: 3em;
     }
 }
 

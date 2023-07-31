@@ -46,7 +46,6 @@ main{
 }
 
 /*nosotros*/
-
 .grid-nosotros{
     background-color:  #2E2F2F;
     display: grid;
@@ -83,12 +82,19 @@ main{
     color:#EEF0F2
     
 }
-
+*/
+.grid-nosotros{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22em;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+}
 /** page servicio **/ 
 .servcios-titulo{
     font-weight: 800;
     font-size: 1.8em;
-    color: #EEF0F2;
+    color:  #2E2F2F;
     display: flex;
     justify-content: center;
     padding-top: 3em;
@@ -101,12 +107,12 @@ main{
     color: #FF9F1C;
     display: flex;
     justify-content: center;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     padding-top: 3em;
 }
 
 .servicios-presupuesto:hover{
-    color: #EEF0F2;
+    color:  #2E2F2F;
 }
 
 .servicios-items-Render{
@@ -134,12 +140,6 @@ main{
     flex-wrap: wrap;
 }
 
-.servcios-container{
-    padding-left: 8em;
-    position: absolute;
-    top: 6em;
-}
-
 .servicios-items-subtitulo{
     font-size: 0.7em;
     font-weight: 600;
@@ -149,14 +149,14 @@ main{
 }
 
 .servicios-items-subtitulo:hover{
-    color: whitesmoke;
+    color:  #2E2F2F;
     font-size: 0.8em;
 }
 
 .servicios-items-button{
     border-radius: 0.8em;
     background-color: transparent;
-    border-color: #EEF0F2;
+    border-color:  #2E2F2F;
 }
 
 .servicios-items-button:hover{
@@ -166,18 +166,13 @@ main{
 .servicios-items-card{
     font-size: 0.8em;
     width: 25em;
-    color: #EEF0F2;
+    color: #2E2F2F;
     margin: 2em;
     
 }
 
 .servicios{
     background-color: transparent
-}
-
-.servicio-fondo{
-    height: 40em;
-    width: 85em;
 }
 
 .servicios-beneficios-titulo{
@@ -265,7 +260,7 @@ footer{
  align-items: center;
 }
 
-@media (max-width: 990px) {
+@media (min-width:561px max-width: 959px){
     .logo-header{
         width: 1em
     }
@@ -314,9 +309,62 @@ footer{
         padding-top: 1em;
     }
 
-    .servicio-fondo{
-        height: 65em;
-        width: 110em;
+    .servicios-beneficios{
+        height: 30em;
+    }
+
+    .servicios-beneficios-lista{
+        padding-left: 3em;
+    }
+}
+
+@media (max-width: 560px) {
+    .logo-header{
+        width: 1em
+    }
+ 
+    .logo-footer{
+        width: 1em;
+    }
+
+    .footer-lista{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carrusel-index{
+        flex-direction: column;
+    }
+
+    .carrusel-lg{
+        display: none;
+    }
+
+    .carrusel-media{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicios-items-360{
+        padding-top: 1em;
+    }
+
+    .servicios-items-Render{
+        padding-bottom: 1em;
+    }
+
+    .servicios-items-recorrido{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .servcios-container{
+        padding-left: 0em;
+    }
+
+    .servcios-titulo{
+        padding-top: 1em;
     }
 
     .servicios-beneficios{

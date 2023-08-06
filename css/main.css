@@ -1,0 +1,333 @@
+/*COLORES*/
+/*FONT*/
+* {
+  font-family: "Manrope", sans-serif;
+  background-color: #EEF0F2;
+}
+
+main {
+  background-color: #EEF0F2;
+}
+
+.carrusel--media {
+  display: none;
+}
+
+footer {
+  background-color: #EEF0F2;
+  padding: 0.8em 0.8em 0.8em 0.8em;
+}
+
+/*usar en servicios para parte de beneficios y titulo "servicios"*/
+/*Layout grid*/
+/*HEADER*/
+.encabezado {
+  background-color: rgba(238, 240, 242, 0.6901960784);
+}
+.encabezado :hover {
+  color: #FF9F1C;
+}
+.encabezado_logo {
+  justify-content: left;
+}
+.encabezado_logo--img {
+  width: 2em;
+}
+.encabezado_lista {
+  justify-content: right;
+  color: #2E2F2F;
+  font-weight: 400;
+}
+
+.pie {
+  background-color: #EEF0F2;
+}
+.pie__lista {
+  justify-content: center;
+  color: #2E2F2F;
+  font-weight: 400;
+  align-items: center;
+}
+.pie__lista--icono {
+  width: 1em;
+  display: inline;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.logo-flotante {
+  position: fixed;
+  bottom: 0.8em;
+  right: 1em;
+}
+.logo-flotante--icono {
+  width: 1.5em;
+  display: inline;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nosotros__texto {
+  margin: 8em 2em 2em;
+}
+.nosotros__texto--titulo {
+  display: inline;
+  font-size: 1.5em;
+  color: #2E2F2F;
+  font-weight: 800;
+}
+.nosotros__texto--p {
+  padding-top: 2em;
+  font-size: 1em;
+  color: #2E2F2F;
+}
+.nosotros__img {
+  width: 50rem;
+}
+
+.servicios {
+  background-color: transparent;
+}
+.servicios__container--titulo {
+  font-size: 1.8em;
+  color: #2E2F2F;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.servicios__container--presupuesto {
+  font-size: 1em;
+  color: #FF9F1C;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.servicios__container--presupuesto :hover {
+  color: #2E2F2F;
+}
+.servicios__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.servicios__items--render {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios__items--recorrido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios__items--360 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios__items--subtitulo {
+  font-size: 0.7em;
+  color: #FF9F1C;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.2em 0.2em 0.2em 0.2em;
+}
+.servicios__items--subtitulo :hover {
+  font-size: 0.8em;
+  color: #2E2F2F;
+}
+.servicios__items--button {
+  border-radius: 0.8em;
+  background-color: transparent;
+  border-color: #2E2F2F;
+}
+.servicios__items--button :hover {
+  background-color: rgb(27, 27, 27);
+}
+.servicios__items--card {
+  font-size: 0.8em;
+  color: #2E2F2F;
+  width: 25em;
+  margin: 2em;
+}
+.servicios__beneficios {
+  height: 25em;
+  background-color: #2E2F2F;
+}
+.servicios__beneficios__titulo {
+  padding-left: 2em;
+  padding-top: 2em;
+  font-size: 1.6em;
+  color: #EEF0F2;
+  font-weight: 800;
+}
+.servicios__beneficios__lista {
+  padding-left: 5em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #EEF0F2;
+}
+.servicios__beneficios__lista--subtit {
+  font-weight: 600;
+  color: #FF9F1C;
+}
+
+.galeria--titulo {
+  padding-top: 3em;
+  font-size: 1.8em;
+  color: #FF9F1C;
+  font-weight: 800;
+  justify-content: center;
+}
+.galeria__container__button {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.galeria__container__button--subtitulo {
+  font-size: 1em;
+  color: #2E2F2F;
+  font-weight: 600;
+  display: inline;
+}
+.galeria__container__button--item {
+  border-radius: 0.7em;
+  background-color: whitesmoke;
+  border-color: #2E2F2F;
+}
+.galeria__container__interior--img {
+  width: 30em;
+}
+.galeria__container__exterior--img {
+  width: 30em;
+}
+.galeria__container__recorrido--video {
+  width: 100%;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacto__container {
+  width: 40em;
+  margin: 2em 2em 2em 2em;
+}
+.contacto__container__lista__items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.contacto__container__lista__items--icono {
+  width: 1.5em;
+  display: inline;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.contacto__container__lista__items--h6 {
+  font-size: 1em;
+  color: #2E2F2F;
+  font-weight: 500;
+  display: inline;
+}
+.contacto__container__lista__items--h6 :hover {
+  color: #FF9F1C;
+}
+
+@media (max-width: 959px) {
+  .encabezado-container-logo-mp {
+    width: 1em;
+  }
+  .logo-flotante--icono {
+    width: 1em;
+  }
+  .pie__lista {
+    display: flex;
+    justify-content: center;
+  }
+  .carrusel-index {
+    flex-direction: column;
+    display: inline-block;
+  }
+  .carrusel--media {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel--lg {
+    display: none;
+  }
+  .servcios__container__items--360 {
+    padding-top: 1em;
+  }
+  .servcios__container__items--render {
+    padding-bottom: 1em;
+  }
+  .servcios__container__items--recorrido {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .servcios__container {
+    padding-left: 0em;
+  }
+  .servcios__container--titulo {
+    padding-top: 1em;
+  }
+  .servicios__beneficios {
+    height: 30em;
+  }
+  .servicios__beneficios__lista {
+    padding-left: 3em;
+  }
+}
+@media (max-width: 560px) {
+  .encabezado-container-logo-mp {
+    width: 1em;
+  }
+  .logo-flotante--icono {
+    width: 1em;
+  }
+  .pie__lista {
+    display: flex;
+    justify-content: center;
+  }
+  .carrusel-index {
+    flex-direction: column;
+    display: inline-block;
+  }
+  .carrusel-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-lg {
+    display: none;
+  }
+  .servcios__container__items--360 {
+    padding-top: 1em;
+  }
+  .servcios__container__items--render {
+    padding-bottom: 1em;
+  }
+  .servcios__container__items--recorrido {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .servcios__container {
+    padding-left: 0em;
+  }
+  .servcios__container--titulo {
+    padding-top: 1em;
+  }
+  .servicios__beneficios {
+    height: 30em;
+  }
+  .servicios__beneficios__lista {
+    padding-left: 3em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

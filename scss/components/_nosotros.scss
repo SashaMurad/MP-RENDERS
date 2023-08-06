@@ -1,0 +1,16 @@
+.nosotros{
+    &__texto{
+        margin: 8em 2em 2em;
+        &--titulo{
+            display: inline;
+            @include font-size-weight-color (1.5em, $gris-oscuro, 800);
+        }
+        &--p{
+            padding-top: 2em;
+            @include font-color (1em, $gris-oscuro);
+        }
+    }
+    &__img{
+        width: 50rem;
+    }
+}

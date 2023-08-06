@@ -1,0 +1,73 @@
+.servicios{
+    background-color: transparent;
+    &__container{
+        &--titulo{
+            @include font-size-weight-color (1.8em, $gris-oscuro, 800);
+            @include flex-center;
+            @include padding (3em , 3em);
+        }
+        &--presupuesto{
+            @include font-size-weight-color (1em, $naranja, 600);
+            @include flex-center;
+            @include padding (3em , 3em);
+            :hover{
+                color: $gris-oscuro;
+            }
+        }
+    }
+    &__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &--render{
+            @include flex-col-alig;
+        }
+        &--recorrido{
+            @include flex-col-alig;
+        }
+        &--360{
+            @include flex-col-alig;
+        }
+        &--subtitulo{
+            @include font-size-weight-color (0.7em, $naranja, 600);
+            text-decoration: none;
+            margin: 0.2em 0.2em 0.2em 0.2em;
+            :hover{
+                @include font-color (0.8em, $gris-oscuro);
+            }
+        }
+        &--button{
+            border-radius: 0.8em;
+            background-color: transparent;
+            border-color: $gris-oscuro;
+            :hover{
+                background-color: $gris-muy-oscuro;
+            }
+        }
+        &--card{
+            @include font-color (0.8em, $gris-oscuro);
+            width: 25em;
+            margin: 2em;
+        }
+    }
+    &__beneficios{
+        height: 25em;
+        background-color: $gris-oscuro;
+        &__titulo{
+            padding-left: 2em;
+            padding-top: 2em;
+            @include font-size-weight-color (1.6em, $gris-claro, 800);
+        }
+        &__lista{
+            padding-left: 5em;
+            padding-top: 1em;
+            @include font-color (0.9em, $gris-claro);
+            &--subtit{
+                font-weight: 600;
+                color: $naranja;
+            }
+        }
+
+    }
+    }

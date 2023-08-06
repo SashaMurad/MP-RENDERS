@@ -1,0 +1,55 @@
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin flex-col-alig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin padding ($top , $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin font ($size, $weight){
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin font-color ($size, $color){
+    font-size: $size;
+    color: $color;
+}
+
+@mixin font-size-weight-color ($size, $color, $weight){
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-col{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-alig{
+    display: flex;
+    align-items: center;
+}
+
+/*usar en servicios para parte de beneficios y titulo "servicios"*/
+@mixin change-font-color ($color){
+    @if ($color == "gris-oscuro"){
+        color: $gris-claro;
+    }
+    @else { color: $gris-oscuro}
+}

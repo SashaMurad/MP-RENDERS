@@ -12,112 +12,119 @@
      <!-- Links CSS-->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
     <title>servicios</title>
+    <!--ANIMATE-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!---AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="sticky-top">
-        <section class="encabezado-container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!---logo + nombre de marca-->
-                    <section class="encabezado-logo-maprenders">
-                        <a class="navbar-brand" href="../index.html">
-                            <img class="logo-header" src="../assets/LOGO MP RENDERS.png" alt="Mp Renders">
-                        </a>
-                        <a class="navbar-brand" href="../index.html">MP Renders</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </section>
-                    <!--- navbar-->
-                  <div class="collapse navbar-collapse encabezado-lista" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link  cambio-color"  href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link  cambio-color" href="./nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link  cambio-color" href="./servicios.html">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link  cambio-color" href="./portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link  cambio-color" href="./contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>        
-        </section>
-        
-    </header>
+  <header class="sticky-top">
+    <section class="encabezado">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!---logo + nombre de marca-->
+                <section class="encabezado__logo">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="encabezado__logo--img animate__slideInDown" src="../assets/LOGO MP RENDERS.png" alt="Mp Renders">
+                    </a>
+                    <a class="navbar-brand" href="../index.html">MP Renders</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </section>
+                <!--- navbar-->
+              <div class="collapse navbar-collapse encabezado__lista" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=".//contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>        
+    </section>
+    
+</header>
 
     <main class="servicios-main">
         <section class="servicios">
-            <div class="servcios-container">
-              <h2  class="servcios-titulo">NUESTROS SERVICIOS</h2>
-              <div class="servcios-items-container">
-                <section class="servicios-items-Render">
+            <div class="servcios__container">
+              <h2  class="servcios__container--titulo">NUESTROS SERVICIOS</h2>
+              <div class="servcios__container__items">
+                <section class="servcios__container__items--render">
                   <nav>
-                     <button class="servicios-items-button">
-                          <h3><a class="servicios-items-subtitulo" href="./portfolio.html">Render</a></h3>
+                     <button class="servcios__container__items--button">
+                          <h3><a class="servcios__container__items--subtitulo" href="./portfolio.html">Render</a></h3>
                      </button>
                   </nav>
-                  <p class="servicios-items-card">Representación fotorealista de imáenes 
+                  <p class="servcios__container__items--card">Representación fotorealista de imáenes 
                     estáticas de las áreas más importantes de su
                     proyecto, comunica su proyecto y acelera sus
                     ventas. </p>
                 </section>
-                <section class="servicios-items-recorrido">
+                <section class="servcios__container__items--recorrido">
                   <nav>
-                      <button class="servicios-items-button">
-                          <h3><a class="servicios-items-subtitulo" href="./portfolio.html">Recorrido virtual</a></h3>
+                      <button class="servcios__container__items--button">
+                          <h3><a class="servcios__container__items--subtitulo" href="./portfolio.html">Recorrido virtual</a></h3>
                       </button>
                   </nav>
-                  <p class="servicios-items-card">Videoclip que muestra los mejores atributos de
+                  <p class="servcios__container__items--card">Videoclip que muestra los mejores atributos de
                     su proyecto, desde exteriores a interiores. Ideal
                     para mostrar complejos a todo un proyecto
                     completo.  </p>
                 </section>
-                <section class="servicios-items-360">
+                <section class="servcios__container__items--360">
                   <nav>
-                      <button class="servicios-items-button">
-                          <h3><a class="servicios-items-subtitulo" href="./portfolio.html">Render 360°</a></h3>
+                      <button class="servcios__container__items--button">
+                          <h3><a class="servcios__container__items--subtitulo" href="./portfolio.html">Render 360°</a></h3>
                       </button>
                   </nav>
-                  <p class="servicios-items-card">Tour virtual interactivo generalmente realizado
+                  <p class="servcios__container__items--card">Tour virtual interactivo generalmente realizado
                     para mostrar espacios interiores, su interacción
                     puede ser en cualquier dispositivo o con lentes
                     de realidad virtual. </p>
                 </section>
               </div>
               <nav>
-                <a class="servicios-presupuesto" href="../pages/contacto.html">Pedí tu presupuesto aquí</a>
+                <a class="servcios__container--presupuesto" href="../pages/contacto.html">Pedí tu presupuesto aquí</a>
             </nav>
             </div>
         </section>
 
-        <section class="servicios-beneficios">
-            <h4 class="servicios-beneficios-titulo">BENEFICIOS</h4>
-            <ul class="servicios-beneficios-lista">
+        <section class="servicios__beneficios">
+            <h4 class="servicios__beneficios__titulo">BENEFICIOS</h4>
+            <ul class="servicios__beneficios__lista">
                 <li>
-                    <h6 class="servicios-beneficios-lista-subtit">TIEMPOS DE ENTREGA</h6>
-                    <p class="servicios-beneficios-p">Nos ajustamos a tu fecha de entrega cumpliendo en tiempo y forma con nuestro compromiso</p>
+                    <h6 class="servicios__beneficios__lista--subtit">TIEMPOS DE ENTREGA</h6>
+                    <p class="servicios__beneficios__lista--p">Nos ajustamos a tu fecha de entrega cumpliendo en tiempo y forma con nuestro compromiso</p>
                 </li>
                 <li>
-                    <h6 class="servicios-beneficios-lista-subtit">RENDERS PREVIOS</h6>
-                    <p class="servicios-beneficios-p">Hacemos los ajustes y te los mostramos con renders previos para que estés seguro/a de como quedará el resultado final.</p>
+                    <h6 class="servicios__beneficios__lista--subtit">RENDERS PREVIOS</h6>
+                    <p class="servicios__beneficios__lista--p">Hacemos los ajustes y te los mostramos con renders previos para que estés seguro/a de como quedará el resultado final.</p>
                 </li>
                 <li>
-                    <h6 class="servicios-beneficios-lista-subtit">PACKS</h6>
-                    <p class="servicios-beneficios-p">Te hacemos descuento cuando nos contratas el conjunto completo de servicios.</p>
+                    <h6 class="servicios__beneficios__lista--subtit">PACKS</h6>
+                    <p class="servicios__beneficios__lista--p">Te hacemos descuento cuando nos contratas el conjunto completo de servicios.</p>
                 </li>
                 <li>
-                    <h6 class="servicios-beneficios-lista-subtit">ALTA CALIDAD</h6>
-                    <p class="servicios-beneficios-p">Tus renders estarán listos para ser impresos y/o proyectados.</p>
+                    <h6 class="servicios__beneficios__lista--subtit">ALTA CALIDAD</h6>
+                    <p class="servicios__beneficios__lista--p">Tus renders estarán listos para ser impresos y/o proyectados.</p>
                 </li>
             </ul>
         </section>
@@ -125,26 +132,31 @@
     </main>
     
     <footer> 
-        <section class="footer-container">
+      <section class="pie">
           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                   <!--- navbar-->
-                <div class="navbar-collapse footer-lista" id="navbarfooter">
-                      <a class="nav-link"  href="../pages/contacto.html">
-                        <img class="footer-media-img" src="../assets/item mail.png" alt="Mail">
+                <div class="navbar-collapse pie__lista" id="navbarfooter">
+                      <a class="nav-link"  href=»mailto:mprendersarq@gmail.com»>
+                        <img class="pie__lista--icono" src="../assets/item mail.png" alt="Mail">
                       </a>
                       <a class="nav-link" href="https://www.instagram.com/_mprenders/">
-                        <img class="footer-media-img" src="../assets/item ig.png" alt="instagram">
+                        <img class="pie__lista--icono" src="../assets/item ig.png" alt="instagram">
                       </a>
                 </div>
               </div>
             </nav>        
       </section>
       <div  class="logo-flotante">
-          <img class="logo-footer" src="../assets/LOGO MP RENDERS.png" alt="Mp Renders">
+          <img class="logo-flotante--icono" src="../assets/LOGO MP RENDERS.png" alt="Mp Renders">
       </div>
   </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

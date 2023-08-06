@@ -1,0 +1,27 @@
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__container{
+        width: 40em;
+        margin: 2em 2em 2em 2em;
+        &__lista{
+            &__items{
+                @include flex-alig;
+                list-style: none;
+                &--icono{
+                    width: 1.5em;
+                    display: inline;
+                    @include padding (1em , 1em);
+                }
+                &--h6{
+                    @include font-size-weight-color (1em, $gris-oscuro, 500);
+                    display: inline;
+                    :hover{
+                        color: $naranja;
+                    }
+                }
+            }
+        }
+    }
+}

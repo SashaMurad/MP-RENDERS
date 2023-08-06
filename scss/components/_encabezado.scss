@@ -1,0 +1,17 @@
+.encabezado{
+    background: linear-gradient(261deg, rgba(112,112,112,0.36738445378151263) 0%, rgba(173,173,173,0.3169642857142857) 45%, rgba(228,228,228,0.19931722689075626) 100%);
+    :hover{
+        color: $naranja;
+    }
+    &_logo{
+        justify-content: left;
+        &--img{
+            width: 2em;
+        }
+    }
+    &_lista{
+        justify-content: right;
+        color: $gris-oscuro;
+        font-weight: 400;
+    }
+}

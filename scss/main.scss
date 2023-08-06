@@ -1,0 +1,16 @@
+
+@import "./vars";
+@import "./reset";
+@import "./mixin";
+
+/*Layout grid*/
+
+/*HEADER*/
+@import "./components/encabezado.scss";
+@import "./components/pie";
+@import "./components/nosotros";
+@import "./components/servicios";
+@import "./components/galeria";
+@import "./components/contacto";
+
+@import "./mq";

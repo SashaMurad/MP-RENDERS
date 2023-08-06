@@ -1,0 +1,36 @@
+.galeria{
+    &--titulo{
+        padding-top: 3em;
+        @include font-size-weight-color (1.8em, $naranja, 800);
+        justify-content: center;
+    }
+    &__container{
+        &__button{
+            @include padding (2em , 2em);
+            &--subtitulo{
+                @include font-size-weight-color (1em, $gris-oscuro, 600);
+                display: inline;
+            }
+            &--item{
+                border-radius: 0.7em;
+                background-color: $blanco;
+                border-color: $gris-oscuro;
+            }
+        }
+        &__interior{
+            &--img{
+                width: 30em;
+            }
+        }
+        &__exterior{
+            &--img{
+                width: 30em;
+            }
+        }
+        &__recorrido{
+            &--video{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -13,23 +13,23 @@ gris muy oscuro: rgb(27, 27, 27)
 
 /*HEADER*/
 
-.encabezado-container{
-    background-color:#eef0f2b0 ;
+.encabezado{
+    background: linear-gradient(261deg, rgba(112,112,112,0.36738445378151263) 0%, rgba(173,173,173,0.3169642857142857) 45%, rgba(228,228,228,0.19931722689075626) 100%);
 }
 
 .encabezado-container a:hover{
     color: #FF9F1C;
 }
 
-.logo-header{
+.encabezado-container-logo-mp{
     width: 2em
 }
 
-.encabezado-logo-mprenders{
+.encabezado-container-logo{
     justify-content: left;
 }
 
-.encabezado-lista{
+.encabezado-container-lista{
     justify-content: right;
     color: #2E2F2F;
     font-weight: 400;
@@ -41,11 +41,31 @@ main{
     background-color:  #EEF0F2 
 }
 
-.carrusel-media{
-    display: none;
-}
+
 
 /*nosotros*/
+.nosotros__img{
+    width: 50rem
+}
+
+.nosotros__texto--titulo{
+    display: inline;
+    font-weight: 800;
+    font-size: 1.5em;
+    color:#2E2F2F
+}
+
+.nosotros__texto--p{
+    padding-top: 2em;
+    font-size: 1em;
+    color:#2E2F2F
+}
+
+.nosotros___texto{
+    margin: 8em 2em 2em ;
+}
+
+/*
 .grid-nosotros{
     background-color:  #2E2F2F;
     display: grid;
@@ -82,16 +102,16 @@ main{
     color:#EEF0F2
     
 }
-*/
+
 .grid-nosotros{
     display: grid;
     gap: 1rem;
     grid-auto-flow: dense;
     grid-auto-rows: 22em;
     grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
-}
-/** page servicio **/ 
-.servcios-titulo{
+}*/
+/** page servicio */
+.servcios__container--titulo{
     font-weight: 800;
     font-size: 1.8em;
     color:  #2E2F2F;
@@ -100,8 +120,8 @@ main{
     padding-top: 3em;
     padding-bottom: 3em;
 }
-
-.servicios-presupuesto{
+ 
+.servcios__container--presupuesto{
     font-size: 1em;
     font-weight: 600;
     color: #FF9F1C;
@@ -111,36 +131,36 @@ main{
     padding-top: 3em;
 }
 
-.servicios-presupuesto:hover{
+.sservcios__container--presupuesto:hover{
     color:  #2E2F2F;
 }
 
-.servicios-items-Render{
+.servcios__container__items--render{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servicios-items-recorrido{
+.servcios__container__items--recorrido{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servicios-items-360{
+.servcios__container__items--360{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servcios-items-container{
+.servcios__container__items{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.servicios-items-subtitulo{
+.servcios__container__items--subtitulo{
     font-size: 0.7em;
     font-weight: 600;
     color: #FF9F1C;
@@ -148,22 +168,22 @@ main{
     margin: 0.2em 0.2em 0.2em 0.2em;
 }
 
-.servicios-items-subtitulo:hover{
+.servcios__container__items--subtitulo:hover{
     color:  #2E2F2F;
     font-size: 0.8em;
 }
 
-.servicios-items-button{
+.servcios__container__items--button{
     border-radius: 0.8em;
     background-color: transparent;
     border-color:  #2E2F2F;
 }
 
-.servicios-items-button:hover{
+.servcios__container__items--button:hover{
     background-color: rgba(245, 245, 245, 0.116);
 }
 
-.servicios-items-card{
+.servcios__container__items--card{
     font-size: 0.8em;
     width: 25em;
     color: #2E2F2F;
@@ -175,7 +195,7 @@ main{
     background-color: transparent
 }
 
-.servicios-beneficios-titulo{
+.servicios__beneficios__titulo{
     padding-left: 2em;
     padding-top: 2em;
     font-size: 1.6em;
@@ -183,43 +203,96 @@ main{
     color:#EEF0F2;
 }
 
-.servicios-beneficios-lista-subtit{
+.servicios__beneficios__lista--subtit{
     font-weight: 600;
     color: #FF9F1C;
 }
 
-.servicios-beneficios-lista{
+.servicios__beneficios__lista{
     padding-left: 5em;
     padding-top: 1em;
     font-size: 0.9em;
     color:#EEF0F2;
 }
 
-.servicios-beneficios{
+.sservicios__beneficios{
     height: 25em;
     background-color: #2E2F2F;
 }
 
 /*Portfolio*/
-
-section img{
-    width: 400px;
+.galeria---titulo{
+    padding-top: 3em;
+    font-size: 1.8em;
+    font-weight: 800;
+    color:  #FF9F1C;
+    justify-content: center;
 }
 
-section video{
+.galeria__container__button--subtitulo{
+    font-size: 1em;
+    font-weight: 600;
+    color: #2E2F2F;
+    display: inline;
+}
+
+.galeria__container__button--item{
+    border-radius: 0.7em;
+    background-color: whitesmoke;
+    border-color:  #2E2F2F;
+}
+
+.galeria__container__button{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.galeria__container__interior--img{
+    width: 30em;
+}
+
+.galeria__container__exterior--img{
+    width: 30em;
+}
+
+.galeria__container__recorrido--video{
     width: 100%;
 }
-
+*/
 /*Contacto*/
-
-.iconos-contacto{
-    width: 18px;
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-ul li nav a p{
+.contacto__container{
+    width: 40em;
+    margin: 2em 2em 2em 2em;
+}
+
+.contacto__container__lista__items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.contacto__container__lista__items--icono{
+    width: 1.5em;
+    display: inline;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.contacto__container__lista__items--h6{
     font-weight: 400;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 1em;
+    display: inline;
+    color: gris oscuro;
+}
+
+.contacto__container__lista__items--h6:hover{
+    color: naranja;
 }
 
 /*FOOTER*/
@@ -228,18 +301,19 @@ footer{
     padding: 0.8em 0.8em 0.8em 0.8em;
 }
 
-.footer-container{
+.pie{
     background-color:#EEF0F2 ;
 }
 
-.logo-footer{
+.logo-flotante--icono{
     width: 2em;
 }
 
-.footer-lista{
+.pie__lista{
     justify-content: center;
     color: #2E2F2F;
     font-weight: 400;
+    align-items: center;
 }
 
 .logo-flotante{
@@ -247,18 +321,13 @@ footer{
     bottom: 0.8em;
     right: 1em;
 } 
-.footer-media-img{
+.pie__lista--icono{
     width: 1em;
     display: inline;
     margin-left: 1em;
     margin-right: 1em;
-   
-
 }
 
-.footer-lista{
- align-items: center;
-}
 
 @media (min-width:561px max-width: 959px){
     .logo-header{
@@ -317,7 +386,7 @@ footer{
         padding-left: 3em;
     }
 }
-
+*/
 @media (max-width: 560px) {
     .logo-header{
         width: 1em

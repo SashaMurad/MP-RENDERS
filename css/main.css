@@ -14,34 +14,31 @@ main {
 }
 
 footer {
-  background-color: #EEF0F2;
-  padding: 0.8em 0.8em 0.8em 0.8em;
+  background: linear-gradient(261deg, rgba(8, 8, 8, 0.3294117647) 0%, rgba(43, 43, 43, 0.288) 45%, rgba(32, 32, 32, 0.041) 100%);
+  padding: 1em 1em 1em 1em;
 }
 
 /*usar en servicios para parte de beneficios y titulo "servicios"*/
 /*Layout grid*/
 /*HEADER*/
 .encabezado {
-  background-color: rgba(238, 240, 242, 0.6901960784);
+  background: linear-gradient(261deg, rgba(8, 8, 8, 0.3294117647) 0%, rgba(43, 43, 43, 0.288) 45%, rgba(32, 32, 32, 0.041) 100%);
 }
 .encabezado :hover {
   color: #FF9F1C;
 }
-.encabezado_logo {
+.encabezado__logo {
   justify-content: left;
 }
-.encabezado_logo--img {
+.encabezado__logo--img {
   width: 2em;
 }
-.encabezado_lista {
+.encabezado__lista {
   justify-content: right;
   color: #2E2F2F;
   font-weight: 400;
 }
 
-.pie {
-  background-color: #EEF0F2;
-}
 .pie__lista {
   justify-content: center;
   color: #2E2F2F;

@@ -30,6 +30,9 @@ footer {
 .encabezado__logo {
   justify-content: left;
 }
+.encabezado__logo--animacion {
+  transform: scale(2);
+}
 .encabezado__logo--img {
   width: 2em;
 }

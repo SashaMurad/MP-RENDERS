@@ -3,9 +3,11 @@
     :hover{
         color: $naranja;
     }
-    
     &__logo{
         justify-content: left;
+        &--animacion{
+            transform: scale(2);
+        }
         &--img{
             width: 2em;
         }

@@ -17,11 +17,12 @@
                 &--h6{
                     @include font-size-weight-color (1em, $gris-oscuro, 500);
                     display: inline;
+                    text-decoration: none;
                     :hover{
                         color: $naranja;
                     }
                 }
+                }
             }
-        }
     }
 }

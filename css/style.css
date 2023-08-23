@@ -6,12 +6,11 @@ Gris oscuro: #2E2F2F
 Naranja: #FF9F1C
 gris muy oscuro: rgb(27, 27, 27)
 **/
-
+/*
 *{
     font-family: 'Manrope', sans-serif;
 }
-
-/*HEADER*/
+HEADER
 
 .encabezado{
     background: linear-gradient(261deg, rgba(112,112,112,0.36738445378151263) 0%, rgba(173,173,173,0.3169642857142857) 45%, rgba(228,228,228,0.19931722689075626) 100%);
@@ -35,7 +34,7 @@ gris muy oscuro: rgb(27, 27, 27)
     font-weight: 400;
 }
 
-/*MAIN*/
+MAIN
 
 main{
     background-color:  #EEF0F2 
@@ -43,7 +42,7 @@ main{
 
 
 
-/*nosotros*/
+*nosotros
 .nosotros__img{
     width: 50rem
 }
@@ -65,7 +64,7 @@ main{
     margin: 8em 2em 2em ;
 }
 
-/*
+
 .grid-nosotros{
     background-color:  #2E2F2F;
     display: grid;
@@ -110,7 +109,7 @@ main{
     grid-auto-rows: 22em;
     grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
 }*/
-/** page servicio */
+/** page servicio
 .servcios__container--titulo{
     font-weight: 800;
     font-size: 1.8em;
@@ -220,7 +219,7 @@ main{
     background-color: #2E2F2F;
 }
 
-/*Portfolio*/
+/*Portfolio*//*
 .galeria---titulo{
     padding-top: 3em;
     font-size: 1.8em;
@@ -258,8 +257,8 @@ main{
 .galeria__container__recorrido--video{
     width: 100%;
 }
-*/
-/*Contacto*/
+
+Contacto
 .contacto{
     display: flex;
     justify-content: space-around;
@@ -295,7 +294,7 @@ main{
     color: naranja;
 }
 
-/*FOOTER*/
+FOOTER
 footer{
     background-color:#EEF0F2 ;
     padding: 0.8em 0.8em 0.8em 0.8em;
@@ -386,7 +385,7 @@ footer{
         padding-left: 3em;
     }
 }
-*/
+
 @media (max-width: 560px) {
     .logo-header{
         width: 1em
@@ -445,5 +444,5 @@ footer{
     }
 }
 
-
+ */
 

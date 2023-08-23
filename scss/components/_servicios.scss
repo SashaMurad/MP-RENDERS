@@ -6,6 +6,36 @@
             @include flex-center;
             @include padding (3em , 3em);
         }
+        &__items{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            &__seccion{
+                @include flex-col-alig;
+                &__button{
+                    border-radius: 0.8em;
+                    background-color: transparent;
+                    border-color: $gris-oscuro;
+                    :hover{
+                        background-color: $gris-muy-oscuro;
+                    }
+                    &--subtitulo{
+                        @include font-size-weight-color (0.7em, $naranja, 600);
+                        margin: 0.2em 0.2em 0.2em 0.2em;
+                        text-decoration: none;
+                        :hover{
+                            @include font-color (0.8em, $gris-oscuro);
+                        }
+                    }
+                    &--card{
+                        @include font-color (0.8em, $gris-oscuro);
+                        width: 25em;
+                        margin: 2em;
+                     }
+                }
+            }
+            }
         &--presupuesto{
             @include font-size-weight-color (1em, $naranja, 600);
             @include flex-center;
@@ -15,42 +45,8 @@
             }
         }
     }
-    &__items{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        &--render{
-            @include flex-col-alig;
-        }
-        &--recorrido{
-            @include flex-col-alig;
-        }
-        &--360{
-            @include flex-col-alig;
-        }
-        &--subtitulo{
-            @include font-size-weight-color (0.7em, $naranja, 600);
-            text-decoration: none;
-            margin: 0.2em 0.2em 0.2em 0.2em;
-            :hover{
-                @include font-color (0.8em, $gris-oscuro);
-            }
-        }
-        &--button{
-            border-radius: 0.8em;
-            background-color: transparent;
-            border-color: $gris-oscuro;
-            :hover{
-                background-color: $gris-muy-oscuro;
-            }
-        }
-        &--card{
-            @include font-color (0.8em, $gris-oscuro);
-            width: 25em;
-            margin: 2em;
-        }
-    }
+    
+
     &__beneficios{
         height: 25em;
         background-color: $gris-oscuro;

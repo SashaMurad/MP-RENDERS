@@ -1,69 +1,68 @@
 .servicios{
-    background-color: transparent;
-    &__container{
-        &--titulo{
-            @include font-size-weight-color (1.8em, $gris-oscuro, 800);
-            @include flex-center;
-            @include padding (3em , 3em);
+    &--titulo{
+        @include font-size-weight-color (1.8em, $naranja, 800);
+        @include flex-center;
+        @include padding (3em , 3em);
+    }
+    &__beneficios{
+        height: 25em;
+        &__titulo{
+            padding-left: 2em;
+            padding-top: 2em;
+            @include font-size-weight-color (1.6em, $gris-oscuro, 800);
         }
+        &__lista{
+            padding-left: 5em;
+            padding-top: 1em;
+            @include font-color (0.9em, $gris-oscuro);
+            &--subtit{
+                font-weight: 600;
+                color: $naranja;
+            }
+            &--p{
+                @include font-size-weight-color (0.8em, $gris-oscuro, 400);
+            }
+            }
+        }
+    &__container{
+        margin-top: 3em;
         &__items{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
-            &__seccion{
-                @include flex-col-alig;
+            @include flex-col-alig;
                 &__button{
-                    border-radius: 0.8em;
-                    background-color: transparent;
+                    border-radius: 2em;
+                    background-color: $gris-oscuro;
                     border-color: $gris-oscuro;
                     :hover{
                         background-color: $gris-muy-oscuro;
                     }
-                    &--subtitulo{
-                        @include font-size-weight-color (0.7em, $naranja, 600);
-                        margin: 0.2em 0.2em 0.2em 0.2em;
-                        text-decoration: none;
-                        :hover{
-                            @include font-color (0.8em, $gris-oscuro);
-                        }
+                    &--subititulo{
+                        @include font-size-weight-color (1em, $naranja, 600);
+                        text-decoration: none
                     }
-                    &--card{
-                        @include font-color (0.8em, $gris-oscuro);
-                        width: 25em;
-                        margin: 2em;
-                     }
+                }
+                &--card{
+                    @include font-color (0.8em, $gris-oscuro);
+                    width: 25em;
+                    margin: 2em;
                 }
             }
-            }
-        &--presupuesto{
-            @include font-size-weight-color (1em, $naranja, 600);
-            @include flex-center;
-            @include padding (3em , 3em);
-            :hover{
-                color: $gris-oscuro;
+            &--presupuesto{
+                @include font-size-weight-color (1em, $naranja, 600);
+                @include flex-center;
+                @include padding (3em , 3em);
+                text-decoration: none;
+                
+                :hover{
+                    color: $gris-oscuro;
+                }
             }
         }
+        
     }
     
 
-    &__beneficios{
-        height: 25em;
-        background-color: $gris-oscuro;
-        &__titulo{
-            padding-left: 2em;
-            padding-top: 2em;
-            @include font-size-weight-color (1.6em, $gris-claro, 800);
-        }
-        &__lista{
-            padding-left: 5em;
-            padding-top: 1em;
-            @include font-color (0.9em, $gris-claro);
-            &--subtit{
-                font-weight: 600;
-                color: $naranja;
-            }
-        }
-
-    }
-    }
+ 

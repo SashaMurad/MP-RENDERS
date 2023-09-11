@@ -11,6 +11,22 @@
         }
     }
     &__img{
-        width: 50rem;
+        display: flexbox;
+        flex-wrap: wrap;
+        height: 25rem;
+    }
+    
+    &__testimonios{
+        &__h2{
+            @include font-size-weight-color (1.2em, $gris-claro, 800);
+            background-color: $gris-muy-oscuro;
+            padding-left: 2em
+        }
+        &--p{
+            @include font-color (0.8em, $gris-oscuro);
+        }
+        &--foto{
+            height: 10em;
+        }
     }
 }

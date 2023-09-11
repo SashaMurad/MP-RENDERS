@@ -4,7 +4,12 @@
     align-items: center;
     &__container{
         width: 40em;
-        margin: 2em 2em 2em 2em;
+        margin: 4em 2em 4em 2em;
+        &--titulo{
+            @include font-size-weight-color (2em, $gris-oscuro, 800);
+        }
+
+
         &__lista{
             &__items{
                 @include flex-alig;
@@ -24,5 +29,25 @@
                 }
                 }
             }
+    }
+    &__presupuesto{
+        margin-top: 3em;
+        margin-bottom: 2em;
+        &--tit{
+            background-color: $gris-oscuro;
+            @include font-size-weight-color (1.2em, $gris-claro, 800);
+            padding-left: 2em;
+        }
+        &__ul{
+            list-style-type: decimal-leading-zero;
+            &__li{
+                &--texto{
+                    @include font-size-weight-color (0.8em, $gris-oscuro, 500);
+                }
+            }
+        }
+        &--consulta{
+            @include font-size-weight-color (1em, $naranja, 800);
+        }
     }
 }

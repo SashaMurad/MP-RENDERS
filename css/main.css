@@ -42,6 +42,18 @@ footer {
   font-weight: 400;
 }
 
+.nav-link {
+  color: #FF9F1C !important;
+}
+
+.navbar {
+  background-color: linear-gradient(261deg, rgba(8, 8, 8, 0.3294117647) 0%, rgba(43, 43, 43, 0.288) 45%, rgba(32, 32, 32, 0.041) 100%) !important;
+}
+
+.container-fluid {
+  background-color: linear-gradient(261deg, rgba(8, 8, 8, 0.3294117647) 0%, rgba(43, 43, 43, 0.288) 45%, rgba(32, 32, 32, 0.041) 100%) !important;
+}
+
 .pie__lista {
   display: flex;
   justify-content: center;
@@ -81,52 +93,86 @@ footer {
   color: #2E2F2F;
 }
 .nosotros__img {
-  width: 50rem;
+  display: flexbox;
+  flex-wrap: wrap;
+  height: 25rem;
+}
+.nosotros__testimonios__h2 {
+  font-size: 1.2em;
+  color: #EEF0F2;
+  font-weight: 800;
+  background-color: rgb(27, 27, 27);
+  padding-left: 2em;
+}
+.nosotros__testimonios--p {
+  font-size: 0.8em;
+  color: #2E2F2F;
+}
+.nosotros__testimonios--foto {
+  height: 10em;
 }
 
-.servicios {
-  background-color: transparent;
-}
-.servicios__container--titulo {
+.servicios--titulo {
   font-size: 1.8em;
-  color: #2E2F2F;
+  color: #FF9F1C;
   font-weight: 800;
   display: flex;
   justify-content: center;
   padding-top: 3em;
   padding-bottom: 3em;
 }
+.servicios__beneficios {
+  height: 25em;
+}
+.servicios__beneficios__titulo {
+  padding-left: 2em;
+  padding-top: 2em;
+  font-size: 1.6em;
+  color: #2E2F2F;
+  font-weight: 800;
+}
+.servicios__beneficios__lista {
+  padding-left: 5em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #2E2F2F;
+}
+.servicios__beneficios__lista--subtit {
+  font-weight: 600;
+  color: #FF9F1C;
+}
+.servicios__beneficios__lista--p {
+  font-size: 0.8em;
+  color: #2E2F2F;
+  font-weight: 400;
+}
+.servicios__container {
+  margin-top: 3em;
+}
 .servicios__container__items {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-.servicios__container__items__seccion {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.servicios__container__items__seccion__button {
-  border-radius: 0.8em;
-  background-color: transparent;
+.servicios__container__items__button {
+  border-radius: 2em;
+  background-color: #2E2F2F;
   border-color: #2E2F2F;
 }
-.servicios__container__items__seccion__button :hover {
+.servicios__container__items__button :hover {
   background-color: rgb(27, 27, 27);
 }
-.servicios__container__items__seccion__button--subtitulo {
-  font-size: 0.7em;
+.servicios__container__items__button--subititulo {
+  font-size: 1em;
   color: #FF9F1C;
   font-weight: 600;
-  margin: 0.2em 0.2em 0.2em 0.2em;
   text-decoration: none;
 }
-.servicios__container__items__seccion__button--subtitulo :hover {
-  font-size: 0.8em;
-  color: #2E2F2F;
-}
-.servicios__container__items__seccion__button--card {
+.servicios__container__items--card {
   font-size: 0.8em;
   color: #2E2F2F;
   width: 25em;
@@ -140,30 +186,10 @@ footer {
   justify-content: center;
   padding-top: 3em;
   padding-bottom: 3em;
+  text-decoration: none;
 }
 .servicios__container--presupuesto :hover {
   color: #2E2F2F;
-}
-.servicios__beneficios {
-  height: 25em;
-  background-color: #2E2F2F;
-}
-.servicios__beneficios__titulo {
-  padding-left: 2em;
-  padding-top: 2em;
-  font-size: 1.6em;
-  color: #EEF0F2;
-  font-weight: 800;
-}
-.servicios__beneficios__lista {
-  padding-left: 5em;
-  padding-top: 1em;
-  font-size: 0.9em;
-  color: #EEF0F2;
-}
-.servicios__beneficios__lista--subtit {
-  font-weight: 600;
-  color: #FF9F1C;
 }
 
 .galeria--titulo {
@@ -205,7 +231,12 @@ footer {
 }
 .contacto__container {
   width: 40em;
-  margin: 2em 2em 2em 2em;
+  margin: 4em 2em 4em 2em;
+}
+.contacto__container--titulo {
+  font-size: 2em;
+  color: #2E2F2F;
+  font-weight: 800;
 }
 .contacto__container__lista__items {
   display: flex;
@@ -227,6 +258,30 @@ footer {
 }
 .contacto__container__lista__items--h6 :hover {
   color: #FF9F1C;
+}
+.contacto__presupuesto {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+.contacto__presupuesto--tit {
+  background-color: #2E2F2F;
+  font-size: 1.2em;
+  color: #EEF0F2;
+  font-weight: 800;
+  padding-left: 2em;
+}
+.contacto__presupuesto__ul {
+  list-style-type: decimal-leading-zero;
+}
+.contacto__presupuesto__ul__li--texto {
+  font-size: 0.8em;
+  color: #2E2F2F;
+  font-weight: 500;
+}
+.contacto__presupuesto--consulta {
+  font-size: 1em;
+  color: #FF9F1C;
+  font-weight: 800;
 }
 
 @media (max-width: 959px) {

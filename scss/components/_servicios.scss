@@ -7,7 +7,7 @@
     &__beneficios{
         height: 25em;
         &__titulo{
-            padding-left: 2em;
+            padding-left: 2.1em;
             padding-top: 2em;
             @include font-size-weight-color (1.6em, $gris-oscuro, 800);
         }
